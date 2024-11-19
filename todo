@@ -1,0 +1,6 @@
+1) Password Change in the accounts app
+2) Set Up the the SMS with NEXMO 
+3) Test the call back in the deposit to handle informations retrieval 
+4) Test API retrieval on football app
+5) Test the log-in required for the different roles
+6) Continuous test with the front end integration  

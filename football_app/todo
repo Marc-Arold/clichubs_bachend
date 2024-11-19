@@ -1,0 +1,9 @@
+1) Get the odds per fixures (done)
+2) Redo the models.py to handle the create football bet (done)
+3) Create the football offer (done)
+4) Handle the selection of matches per users
+    - Take the user input (match_name, ligue_name,league_country,date, bookmakers, bets ) 
+    - verify if the number of odds placed by match is less that thaf fixed by the company
+5) Handle the loose or win of the users for each match(done)
+6) Verify if we have to give the user a percentage of his money
+7) Pay the gambler or the company according to the results of the event

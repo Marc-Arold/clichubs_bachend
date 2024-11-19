@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+        .login-container {
+            width: 300px;
+            margin: 0 auto;
+            padding: 30px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+        }
+        .login-container label,
+        .login-container input {
+            display: block;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        .login-container input[type="submit"] {
+            cursor: pointer;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="/accounts/login/" method="post">
+            {% csrf_token %}
+            <label for="phone_number">Phone Number:</label>
+            <input type="text" id="phone_number" name="phone_number" required>
+
+            <label for="password1">Password:</label>
+            <input type="password" id="password1" name="password1" required>
+
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</body>
+</html>

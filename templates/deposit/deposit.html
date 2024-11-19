@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Deposit</title>
+</head>
+<body>
+    <h1>Deposit</h1>
+    <form method="post" action="{% url 'deposit_moncash' %}">
+        {% csrf_token %}
+
+        <label for="amount_deposit">Montan:</label>
+        <input type="text" id="amount_deposit" name="amount_deposit" required>
+        <br>
+      
+        <br>
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
